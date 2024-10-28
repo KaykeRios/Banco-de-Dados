@@ -81,10 +81,10 @@ def menu_relatorios(fornecedor_controller, produtos_controller):
 
         if escolha == '1':
             relatorio_fornecedores = RelatorioFornecedores(fornecedor_controller.db_config)
-            relatorio_fornecedores.gerar_relatorio()  
+            relatorio_fornecedores.gerar_relatorio()  # Método para gerar o relatório
         elif escolha == '2':
             relatorio_produtos = RelatorioProdutos(produtos_controller.db_config)
-            relatorio_produtos.gerar_relatorio()  
+            relatorio_produtos.gerar_relatorio()  # Método para gerar o relatório
         elif escolha == '3':
             print("Voltando ao menu principal...")
             return
